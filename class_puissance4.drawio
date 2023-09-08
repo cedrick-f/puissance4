@@ -1,0 +1,161 @@
+<mxfile host="65bd71144e">
+    <diagram id="DOnwa_qIddVX2aWegV_k" name="Page-1">
+        <mxGraphModel dx="1067" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-7" value="IHM&lt;span style=&quot;font-weight: normal;&quot;&gt; (Interfaces Homme-Machine)&lt;/span&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;horizontal=1;verticalAlign=top;align=left;" parent="1" vertex="1">
+                    <mxGeometry x="630" y="200" width="390" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Puissance4&lt;/b&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;(gestionnaire)&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ ihm: IHM_xxx&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ joueurs: list[Joueur]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ etat: int&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lancer_jeu()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ initialiser_partie()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ demarrer_partie()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ terminer_partie()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ changer_joueur_courant()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_joueur_courant()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_colonne()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_joueur_gagnant()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ quitter_jeu():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="90" width="190" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Pion&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ couleur: str ('R' ou 'J')&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="320" width="160" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Grille&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ colonnes: list[Colonne]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ vider()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_colonne(unm: int): Colonne&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_coul_case(l: int, c: int): str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_alignement(): Tuple[l: int, c: int, str]&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="145" y="370" width="240" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Joueur&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ couleur: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ pions: list[Pion]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ placer_pion(Colonne): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nbr_pions_restants(): int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ distribuer()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_coul(): str&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="140" width="200" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;IHM_tk&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lancer():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="510" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;IHM_txt&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lancer():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="400" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-8" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Colonne&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ cases: list[Case]&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ vider()&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ est_remplie(): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ placer_pion(Pion): bool&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="185" y="547" width="160" height="113" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Case&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ pion: Pion ou None&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ placer_pion(Pion):&amp;nbsp;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ liberer(): Pion&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ est_occupee(): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ est_libre(): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ get_coul(): str ou None&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="430" y="533.5" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-10" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-1" target="nwEWL_xv32pDFeLRWcYY-4" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="320" y="320" as="sourcePoint"/>
+                        <mxPoint x="480" y="320" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-11" value="2" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-10" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="-2" y="17" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-12" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-1" target="nwEWL_xv32pDFeLRWcYY-3" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="190" y="170" as="sourcePoint"/>
+                        <mxPoint x="100" y="250" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="280" y="200"/>
+                            <mxPoint x="280" y="200"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-13" value="1" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-12" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="-2" y="3" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-14" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-3" target="nwEWL_xv32pDFeLRWcYY-8" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="210" y="450" as="sourcePoint"/>
+                        <mxPoint x="120" y="530" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-15" value="7" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-14" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="-2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-16" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-8" target="nwEWL_xv32pDFeLRWcYY-9" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="290" y="450" as="sourcePoint"/>
+                        <mxPoint x="290" y="510" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-17" value="6" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-16" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="8" y="2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-20" value="" style="endArrow=open;startArrow=none;endFill=0;startFill=0;endSize=8;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;rounded=0;" parent="1" source="nwEWL_xv32pDFeLRWcYY-9" target="nwEWL_xv32pDFeLRWcYY-2" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="300" y="450" as="sourcePoint"/>
+                        <mxPoint x="460" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-21" value="0..1" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-20" vertex="1" connectable="0">
+                    <mxGeometry x="0.7941" y="1" relative="1" as="geometry">
+                        <mxPoint x="1" y="12" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-22" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-4" target="nwEWL_xv32pDFeLRWcYY-2" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="230" y="170" as="sourcePoint"/>
+                        <mxPoint x="290" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="510" y="330"/>
+                            <mxPoint x="510" y="330"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-23" value="21" style="edgeLabel;html=1;align=center;verticalAlign=top;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-22" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="8" y="-10" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-24" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;IHM_html&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lancer():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="510" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-25" value="" style="endArrow=none;startArrow=diamondThin;endFill=0;startFill=1;html=1;verticalAlign=bottom;labelBackgroundColor=none;strokeWidth=1;startSize=8;endSize=8;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-1" target="nwEWL_xv32pDFeLRWcYY-7" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="280" y="300" as="sourcePoint"/>
+                        <mxPoint x="280" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="650" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-26" value="1" style="edgeLabel;html=1;align=left;verticalAlign=middle;resizable=0;points=[];" parent="nwEWL_xv32pDFeLRWcYY-25" vertex="1" connectable="0">
+                    <mxGeometry x="0.5959" y="2" relative="1" as="geometry">
+                        <mxPoint x="41" y="43" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-27" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;IHM&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ field: Type&lt;/p&gt;&lt;hr size=&quot;1&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ lancer():&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=12;fontFamily=Helvetica;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="745" y="240" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-29" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-6" target="nwEWL_xv32pDFeLRWcYY-27" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="760" y="140" as="sourcePoint"/>
+                        <mxPoint x="920" y="140" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="730" y="382"/>
+                            <mxPoint x="770" y="382"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-30" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-24" target="nwEWL_xv32pDFeLRWcYY-27" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="750" y="420" as="sourcePoint"/>
+                        <mxPoint x="830" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="930" y="430"/>
+                            <mxPoint x="880" y="430"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="nwEWL_xv32pDFeLRWcYY-31" value="" style="endArrow=block;endSize=16;endFill=0;html=1;rounded=0;edgeStyle=orthogonalEdgeStyle;" parent="1" source="nwEWL_xv32pDFeLRWcYY-5" target="nwEWL_xv32pDFeLRWcYY-27" edge="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="940" y="520" as="sourcePoint"/>
+                        <mxPoint x="830" y="360" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="825" y="420"/>
+                            <mxPoint x="825" y="420"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
