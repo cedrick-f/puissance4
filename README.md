@@ -9,4 +9,4 @@ Voir les diagrammes draw.io
 ### mode texte
 ![Puissance 4 en mode texte](puissance4_txt.gif.gif)
 ### mode tkinter
-![Puissance 4 en mode texte](puissance4_tk.gif.gif)
+![Puissance 4 en mode tkinter](puissance4_tk.gif.gif)
