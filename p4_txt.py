@@ -183,63 +183,13 @@ class IHM_txt:
         j.append('└'+'─'*largeur+'┘')
         return j
 
-def encadrer(lst_lignes, bord = 0, type = 0, justif = 0):
-    """ Encadre une liste de lignes de texte
-        avec des caractères de boite :
-            Box-drawing characters : https://en.wikipedia.org/wiki/Box-drawing_character
-                type 0 : '─', '│', '┐', '┌', '└', '┘'
-                type 1 : '━', '┃', '┓', '┏', '┗', '┛'
-                type 2 : '═', '║', '╗', '╔', '╚', '╝'
-
-        justif : 0=gauche, 1=centre, 3=droite
-        bord : nombre d'espaces entre le texte et le cadre
-
-        Renvoie une liste de lignes :
-        ['texte',         ['┌────────┐',
-         ' à',             '│texte   │',
-         'encadrer']       '│ à      │',
-                           '│encadrer│',
-                           '└────────┘']
-    """
-    cadre = ['─│┐┌└┘', '━┃┓┏┗┛', '═║╗╔╚╝']
-
-    # détermination de la largeur
-    largeur = max([len2(t) for t in lst_lignes])
-
-    lst_cadre = ['']*len2(lst_lignes)
-    for l in range(len2(lst_lignes)):
-        # Ajustement largeur
-        if justif == 0:
-            lst_cadre[l] = lst_lignes[l].ljust(largeur)
-        elif justif == 1:
-            lst_cadre[l] = lst_lignes[l].center(largeur)
-        elif justif == 2:
-            lst_cadre[l] = lst_lignes[l].rjust(largeur)
-        
-        # Ajout du bord
-        lst_cadre[l] = ' '*bord + lst_cadre[l] + ' '*bord
-
-        # Ajout du cadre
-        lst_cadre[l] = cadre[type][1]+lst_cadre[l]+cadre[type][1]
-
-    # Ajout du haut et du bas
-    for _ in range(bord):
-        lst_cadre.insert(0, cadre[type][1]+' '*(largeur+2*bord)+cadre[type][1])
-    lst_cadre.insert(0, cadre[type][3]+cadre[type][0]*(largeur+2*bord)+cadre[type][2])
-    
-    for _ in range(bord):
-        lst_cadre.append(cadre[type][1]+' '*(largeur+2*bord)+cadre[type][1])
-    lst_cadre.append(cadre[type][4]+cadre[type][0]*(largeur+2*bord)+cadre[type][5])
-    return lst_cadre
-    
-
-
 
 def len2(s):
     """ Renvoie la longueur de la chaîne s
         sans compter les caractères ANSI (couleur, ...)
+
+        source : https://stackoverflow.com/questions/68627535/how-to-get-the-length-of-a-string-without-calculating-the-formatting-of-the-text
     """
-    print(s)
     return len(re.sub(
         r'[\u001B\u009B][\[\]()#;?]*((([a-zA-Z\d]*(;[-a-zA-Z\d\/#&.:=?%@~_]*)*)?\u0007)|((\d{1,4}(?:;\d{0,4})*)?[\dA-PR-TZcf-ntqry=><~]))', '', s))
 
@@ -269,14 +219,6 @@ class GestionnaireEvenements:
 ####################################################################
 ####################################################################
 if __name__ == "__main__":
-    lst_lignes = [  'texte',
-                    ' à',
-                    'encadrer']
-    print('\n'.join(encadrer(lst_lignes, bord = 0, type = 0, justif = 0)))
-    print('\n'.join(encadrer(lst_lignes, bord = 1, type = 0, justif = 0)))
-    print('\n'.join(encadrer(lst_lignes, bord = 0, type = 1, justif = 0)))
-    print('\n'.join(encadrer(lst_lignes, bord = 0, type = 2, justif = 0)))
-    print('\n'.join(encadrer(lst_lignes, bord = 0, type = 0, justif = 1)))
-    print('\n'.join(encadrer(lst_lignes, bord = 0, type = 0, justif = 2)))
+    pass
     
     
