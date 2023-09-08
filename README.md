@@ -7,6 +7,6 @@ Voir les diagrammes draw.io
 
 ## Rendu final
 ### mode texte
-![Puissance 4 en mode texte](puissance4_txt.gif.gif )
+![Puissance 4 en mode texte](puissance4_txt.gif.gif)
 ### mode tkinter
-![Puissance 4 en mode texte](puissance4_txt.gif.gifk
+![Puissance 4 en mode texte](puissance4_tk.gif.gif)
